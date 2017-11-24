@@ -1,0 +1,2 @@
+# startvariety
+includes startvariet.sh
