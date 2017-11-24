@@ -20,6 +20,10 @@ cd variety
 sudo cp -R  variety /etc/puppet/modules/
 cd
 sudo puppet apply -e 'class {"variety":}'
+mkdir vagrantpp && cd vagrantpp && > Vagrantfile
+git clone https://github.com/EmreJM/vagrantpp.git
+cd vagrantpp && sudo cp -R  vagrantpp /etc/puppet/modules/
+sudo puppet apply -e 'class {"vagrantpp":}'
 
 tput -T xterm setaf 6
 
